@@ -25,8 +25,8 @@ const helmet = require('helmet') //adding different headers responces for secuti
 const MongoStore = require('connect-mongo');
 
 
-//const dbUrl = process.env.DB_URL
-const dbUrl = 'mongodb://127.0.0.1:27017/yelp-camp'
+const dbUrl = process.env.DB_URL
+// const dbUrl = 'mongodb://127.0.0.1:27017/yelp-camp'
 mongoose.connect(dbUrl)
     .then(() => {
         console.log('Mongo Connection Ready!')
