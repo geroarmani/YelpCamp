@@ -1,0 +1,44 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1536028943632-1b302c2761b3?q=80&w=1994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="Camp-Login" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Register</h5>
+                        <form action="/register" method="post" class="validated-form" novalidate>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Create a username:</label>
+                                <input type="text" id="username" name="username" class="form-control" autofocus required>
+                                <div class="invalid-feedback">
+                                    Please provide a username.
+                                </div>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Enter your email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please provide an email.
+                                </div>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Create a password:</label>
+                                <input type="password" id="password" name="password" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please provide a password.
+                                </div>
+                            </div>
+                
+                            <div class="d-grid">
+                                <button class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,37 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="Camp-Login" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Login</h5>
+                        <form action="/login" method="post" class="validated-form" novalidate>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Enter username:</label>
+                                <input type="text" id="username" name="username" class="form-control" autofocus required>
+                                <div class="invalid-feedback">
+                                    Please provide a username.
+                                </div>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Enter password:</label>
+                                <input type="password" id="password" name="password" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please provide a password.
+                                </div>
+                            </div>
+                
+                            <div class="d-grid">
+                                <button class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
